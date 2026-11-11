@@ -1,15 +1,43 @@
 {
   "id": "scenarios-manhwa",
-  "title": "Scénarios Manhwa — The Last Horizon",
+  "title": "Scénarios - Manhwa",
   "description": "Cartes de scénario façon système (Principal, Secondaire, Caché, Urgence, Bounty, Traque, Événement, Journalière, Interdit) : éditeur MJ, tableau des scénarios trié par type et numéro, diffusion aux joueurs, journal consultable, statuts, visibilité des scénarios terminés, récompenses (Gold, P.I., objets du Catalogue) attribuées aux fiches, notifications via Notifications Manhwa.",
-  "version": "1.0.0",
-  "authors": [{ "name": "Bastien" }],
-  "compatibility": { "minimum": "12", "verified": "13" },
-  "scripts": ["scripts/card.js"],
-  "esmodules": ["scripts/main.js"],
-  "styles": ["styles/scenarios-manhwa.css"],
+  "version": "2.0.1",
+  "authors": [
+    {
+      "name": "Bastien"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "scripts": [
+    "scripts/card.js"
+  ],
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/scenarios-manhwa.css"
+  ],
   "socket": true,
-  "relationships": { "recommends": [{ "id": "notifications-manhwa", "type": "module" }, { "id": "last-horizon-catalogue", "type": "module" }, { "id": "fiche-manhwa", "type": "module" }] },
+  "relationships": {
+    "recommends": [
+      {
+        "id": "manhwa-sheet",
+        "type": "system"
+      },
+      {
+        "id": "last-horizon-catalogue",
+        "type": "module"
+      },
+      {
+        "id": "notifications-manhwa",
+        "type": "module"
+      }
+    ]
+  },
   "manifest": "https://github.com/blendbastien/scenarios-manhwa/releases/latest/download/module.json",
   "download": "https://github.com/blendbastien/scenarios-manhwa/releases/latest/download/scenarios-manhwa.zip",
   "url": "https://github.com/blendbastien/scenarios-manhwa"
